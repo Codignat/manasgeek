@@ -8,7 +8,7 @@ body {
   
   header {
     background-color: #ffb6c1;
-    padding: 20px;
+    padding: 100px 20px 20px;
     text-align: center;
   }
   
@@ -16,13 +16,60 @@ body {
     margin: 0;
     font-size: 2em;
   }
-  
-  main {
-    padding: 20px;
+  nav {
+    padding: 20px 0;
+
   }
   
-  section {
-    margin-bottom: 40px;
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff9aa9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0 100px;
+    padding: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .navbar li a:hover {
+    color: #ff69b4;
+  }
+
+  .logo-container {
+    flex-shrink: 0;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  header {
+    background-color: #ffb6c1;
+    padding: 100px 20px 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+  }
+  main {
+    padding: 20px;
   }
   
   h2 {
@@ -38,18 +85,48 @@ body {
     content: '✨ ';
   }
   
-  footer {
-    background-color: #ffb6c1;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  .mockup {
+footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: #ff69b4;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #ffb6c1;
+}
+.mockup {
     width: 100%;
     max-width: 500px;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d63384;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+.btn-topo:hover {
+    background-color: #ff69b4;
   }
